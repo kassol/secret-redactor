@@ -21,13 +21,13 @@
   ],
   "license": "MIT",
   "author": "ZeroTool",
-  "homepage": "https://github.com/OWNER/secret-redactor#readme",
+  "homepage": "https://zerotool.dev/tools/secret-redactor/",
   "bugs": {
-    "url": "https://github.com/OWNER/secret-redactor/issues"
+    "url": "https://github.com/kassol/secret-redactor/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/secret-redactor.git"
+    "url": "git+https://github.com/kassol/secret-redactor.git"
   },
   "type": "module",
   "exports": {
