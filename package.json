@@ -1,0 +1,64 @@
+{
+  "name": "secret-redactor",
+  "version": "0.1.0",
+  "description": "Replace API keys, tokens and passwords in text with numbered placeholders before you paste it into an AI chat, then put the values back into the reply. No dependencies. Node and browsers.",
+  "keywords": [
+    "secret",
+    "secrets",
+    "redact",
+    "redaction",
+    "api-key",
+    "token",
+    "credentials",
+    "llm",
+    "ai",
+    "prompt",
+    "mask",
+    "sanitize",
+    "privacy",
+    "security",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "ZeroTool",
+  "homepage": "https://github.com/OWNER/secret-redactor#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/secret-redactor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/secret-redactor.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "secret-redactor": "bin/secret-redactor.js"
+  },
+  "files": [
+    "src/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "typecheck": "tsc -p tsconfig.json",
+    "sync": "node scripts/sync-engine.mjs",
+    "sync:check": "node scripts/sync-engine.mjs --check",
+    "rules:readme": "node scripts/rules-table.mjs",
+    "prepublishOnly": "npm test && npm run typecheck && node scripts/rules-table.mjs --check"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
